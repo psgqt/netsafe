@@ -1,0 +1,116 @@
+
+var N=32, DW=390, DH=844;
+var HOT={"0":[{"t":1,"x":99,"y":433,"w":186,"h":45,"m":"1000005"}],"1":[{"t":2,"x":101,"y":522,"w":188,"h":54,"m":"1000003"},{"t":3,"x":101,"y":561,"w":188,"h":54,"m":"1000003"},{"t":3,"x":101,"y":482,"w":188,"h":54,"m":"1000003"},{"t":3,"x":142,"y":499,"w":106,"h":18,"m":"1000003"},{"t":2,"x":135,"y":539,"w":124,"h":16,"m":"1000003"},{"t":3,"x":143,"y":578,"w":106,"h":16,"m":"1000003"}],"2":[{"t":4,"x":59,"y":421,"w":273,"h":62,"m":"1000005"}],"3":[{"t":4,"x":59,"y":421,"w":273,"h":62,"m":"1000005"}],"4":[{"t":5,"x":101,"y":522,"w":188,"h":54,"m":"1000003"},{"t":6,"x":101,"y":561,"w":188,"h":54,"m":"1000003"},{"t":6,"x":101,"y":482,"w":188,"h":54,"m":"1000003"},{"t":6,"x":142,"y":499,"w":106,"h":18,"m":"1000003"},{"t":5,"x":135,"y":539,"w":124,"h":16,"m":"1000003"},{"t":6,"x":143,"y":578,"w":106,"h":16,"m":"1000003"}],"5":[{"t":7,"x":74,"y":421,"w":254,"h":62,"m":"1000005"}],"6":[{"t":7,"x":74,"y":421,"w":254,"h":62,"m":"1000005"}],"7":[{"t":8,"x":101,"y":522,"w":188,"h":54,"m":"1000003"},{"t":9,"x":101,"y":561,"w":188,"h":54,"m":"1000003"},{"t":9,"x":101,"y":482,"w":188,"h":54,"m":"1000003"},{"t":9,"x":142,"y":499,"w":106,"h":18,"m":"1000003"},{"t":8,"x":135,"y":539,"w":124,"h":16,"m":"1000003"},{"t":9,"x":143,"y":578,"w":106,"h":18,"m":"1000003"}],"8":[{"t":10,"x":74,"y":421,"w":254,"h":62,"m":"1000005"}],"9":[{"t":10,"x":74,"y":421,"w":254,"h":62,"m":"1000005"}],"10":[{"t":11,"x":101,"y":522,"w":188,"h":54,"m":"1000020"},{"t":12,"x":101,"y":561,"w":188,"h":54,"m":"1000003"},{"t":12,"x":142,"y":499,"w":106,"h":18,"m":"1000003"},{"t":11,"x":135,"y":539,"w":124,"h":16,"m":"1000020"},{"t":12,"x":143,"y":578,"w":106,"h":16,"m":"1000003"}],"11":[{"t":13,"x":74,"y":421,"w":254,"h":41,"m":"1000005"}],"12":[{"t":13,"x":74,"y":421,"w":254,"h":62,"m":"1000005"}],"13":[{"t":15,"x":101,"y":522,"w":188,"h":54,"m":"1000020"},{"t":14,"x":101,"y":561,"w":188,"h":54,"m":"1000003"},{"t":16,"x":101,"y":482,"w":188,"h":54,"m":"1000003"},{"t":14,"x":142,"y":499,"w":106,"h":18,"m":"1000003"},{"t":15,"x":135,"y":539,"w":124,"h":13,"m":"1000020"},{"t":14,"x":143,"y":578,"w":106,"h":16,"m":"1000003"}],"14":[{"t":16,"x":74,"y":421,"w":254,"h":62,"m":"1000005"}],"15":[{"t":16,"x":74,"y":421,"w":254,"h":41,"m":"1000005"}],"16":[{"t":18,"x":101,"y":522,"w":188,"h":54,"m":"1000003"},{"t":17,"x":101,"y":561,"w":188,"h":54,"m":"1000020"},{"t":18,"x":101,"y":482,"w":188,"h":54,"m":"1000003"},{"t":18,"x":142,"y":499,"w":106,"h":18,"m":"1000003"},{"t":17,"x":135,"y":539,"w":124,"h":15,"m":"1000020"},{"t":18,"x":143,"y":578,"w":106,"h":16,"m":"1000003"}],"17":[{"t":19,"x":74,"y":421,"w":254,"h":41,"m":"1000005"}],"18":[{"t":19,"x":74,"y":421,"w":254,"h":62,"m":"1000005"}],"19":[{"t":20,"x":101,"y":522,"w":188,"h":54,"m":"1000003"},{"t":20,"x":101,"y":561,"w":188,"h":54,"m":"1000003"},{"t":20,"x":101,"y":482,"w":188,"h":54,"m":"1000003"},{"t":20,"x":142,"y":499,"w":106,"h":18,"m":"1000003"},{"t":21,"x":121,"y":536,"w":141,"h":15,"m":"1000020"},{"t":20,"x":143,"y":578,"w":106,"h":16,"m":"1000003"}],"20":[{"t":22,"x":74,"y":421,"w":254,"h":62,"m":"1000005"}],"21":[{"t":22,"x":74,"y":421,"w":254,"h":41,"m":"1000005"}],"22":[{"t":23,"x":101,"y":522,"w":188,"h":54,"m":"1000020"},{"t":24,"x":101,"y":561,"w":188,"h":54,"m":"1000003"},{"t":24,"x":101,"y":482,"w":188,"h":54,"m":"1000003"},{"t":24,"x":142,"y":499,"w":106,"h":16,"m":"1000003"},{"t":23,"x":135,"y":539,"w":124,"h":15,"m":"1000020"},{"t":24,"x":143,"y":578,"w":106,"h":16,"m":"1000003"}],"23":[{"t":25,"x":74,"y":421,"w":254,"h":41,"m":"1000005"}],"24":[{"t":25,"x":74,"y":421,"w":254,"h":62,"m":"1000005"}],"25":[{"t":26,"x":101,"y":522,"w":188,"h":54,"m":"1000020"},{"t":27,"x":101,"y":561,"w":188,"h":54,"m":"1000003"},{"t":27,"x":101,"y":482,"w":188,"h":54,"m":"1000003"},{"t":27,"x":142,"y":499,"w":106,"h":16,"m":"1000003"},{"t":26,"x":128,"y":539,"w":131,"h":15,"m":"1000020"},{"t":27,"x":143,"y":578,"w":106,"h":16,"m":"1000003"}],"26":[{"t":28,"x":86,"y":410,"w":247,"h":41,"m":"1000005"}],"27":[{"t":28,"x":85,"y":416,"w":247,"h":62,"m":"1000005"}],"28":[{"t":29,"x":101,"y":522,"w":188,"h":54,"m":"1000003"},{"t":30,"x":101,"y":561,"w":188,"h":54,"m":"1000003"},{"t":30,"x":101,"y":482,"w":188,"h":54,"m":"1000003"},{"t":30,"x":142,"y":499,"w":106,"h":16,"m":"1000003"},{"t":29,"x":128,"y":539,"w":131,"h":15,"m":"1000003"},{"t":30,"x":143,"y":578,"w":106,"h":16,"m":"1000003"}],"29":[{"t":31,"x":80,"y":402,"w":232,"h":62}],"30":[{"t":31,"x":80,"y":402,"w":232,"h":62,"m":"1000011"}],"31":[{"t":0,"x":99,"y":479,"w":188,"h":54,"m":"1000005"},{"t":0,"x":140,"y":494,"w":107,"h":22,"m":"1000011"}]};
+var TIP={"0": [192.0, 455.5], "2": [195.5, 452.0], "3": [195.5, 452.0], "5": [201.0, 452.0], "6": [201.0, 452.0], "8": [201.0, 452.0], "9": [201.0, 452.0], "11": [201.0, 441.5], "12": [201.0, 452.0], "14": [201.0, 452.0], "15": [201.0, 441.5], "17": [201.0, 441.5], "18": [201.0, 452.0], "20": [201.0, 452.0], "21": [201.0, 441.5], "23": [201.0, 441.5], "24": [201.0, 452.0], "26": [209.5, 430.5], "27": [208.5, 447.0], "29": [196.0, 433.0], "30": [196.0, 433.0]};
+var FINGER="M127.27,94.45H127a7.73,7.73,0,0,0-4.09,1.19,7.81,7.81,0,0,0-7.42-5.35,9.28,9.28,0,0,0-4.4,1.19A8,8,0,0,0,99.83,87V70.71a7.82,7.82,0,0,0-7.88-8,8.08,8.08,0,0,0-8.18,8v39.2l-5-4.9c-3.18-3.12-8.79-2.68-11.52,0s-4.55,8-.61,11.89l22.74,22.31a10.51,10.51,0,0,0,1.51,1.18c4.25,3.27,8.94,5.36,18.95,5.36,23,0,25.16-12.19,25.16-27.36V102.48A7.79,7.79,0,0,0,127.27,94.45Z";
+var stage=document.getElementById('stage');
+var imgs=[], ready=[];
+for(var i=0;i<N;i++){
+  var d=document.createElement('div'); d.className='pg';
+  var im=document.createElement('img'); im.dataset.src='p'+(i<10?'0'+i:i)+'.webp'; im.alt='';
+  d.appendChild(im); stage.appendChild(d);
+  imgs.push(d); ready.push(false);
+}
+
+/* ---- 原版点击音效 ---- */
+var SND={};
+['1000003','1000005','1000011','1000020'].forEach(function(id){
+  SND[id]=new Audio('click_'+id+'.mp3'); SND[id].preload='none';
+});
+function playSnd(id){
+  var a=SND[id]; if(!a) return;
+  try{ a.currentTime=0 }catch(e){}
+  a.play().catch(function(){});
+}
+var cur=-1;
+function fit(){
+  var vw=innerWidth, vh=innerHeight;
+  var s=Math.max(vw/DW, vh/DH);
+  stage.style.transform='translate(-50%,-50%) scale('+s+')';
+}
+addEventListener('resize',fit); addEventListener('orientationchange',function(){setTimeout(fit,120)}); fit();
+
+function load(i){
+  if(i<0||i>=N||ready[i]) return;
+  var im=imgs[i].querySelector('img');
+  im.src=im.dataset.src; ready[i]=true;
+}
+function _go(i){
+  if(i<0||i>=N||i===cur) return;
+  var prev=cur; cur=i;
+  load(i); load(i+1); load(i-1);
+  if(prev>=0){
+    imgs[prev].classList.remove('on');
+    imgs[prev].style.transform = (i>prev ? 'translateY(-100%)' : 'translateY(100%)');
+  }
+  imgs[i].style.transform='translateY(0)';
+  imgs[i].classList.add('on');
+}
+function killTips(){var l=document.querySelectorAll('.tipwrap');for(var i=0;i<l.length;i++)l[i].parentNode.removeChild(l[i])}
+function drawTips(){
+  var t=TIP[cur]; if(!t) return;
+  var w=document.createElement('div'); w.className='tipwrap';
+  w.style.left=t[0]+'px'; w.style.top=t[1]+'px';
+  w.style.transform='translate(-50%,-50%)';
+  var circles='';
+  for(var i=0;i<3;i++) circles+='<div class="cs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42"><circle cx="21" cy="21" r="21" style="fill:#ffffff"></circle></svg></div>';
+  w.innerHTML='<div class="sbm">'+circles+'<div class="fs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path style="fill:#ffffff" d="'+FINGER+'"/></svg></div></div>';
+  stage.appendChild(w);
+}
+function redraw(){
+  killTips();
+  var hl=document.querySelectorAll('.hs[data-hs]');for(var i=0;i<hl.length;i++)hl[i].parentNode.removeChild(hl[i]);
+  drawTips();
+  var hs=HOT[cur]||[];
+  hs.forEach(function(h){
+    var d=document.createElement('div'); d.className='hs'; d.setAttribute('data-hs','1');
+    d.style.left=h.x+'px'; d.style.top=h.y+'px'; d.style.width=h.w+'px'; d.style.height=h.h+'px';
+    d.addEventListener('click',function(ev){ev.stopPropagation();if(h.m)playSnd(h.m);killTips();go(h.t)});
+    stage.appendChild(d);
+  });
+}
+function go(i){ _go(i); redraw(); }
+
+/* 翻页：触摸滑动 */
+var sy=null, st=0;
+addEventListener('touchstart',function(e){
+  sy=e.touches[0].clientY; st=Date.now(); tryBgm();
+},{passive:true});
+addEventListener('touchend',function(e){
+  if(sy===null) return;
+  var dy=e.changedTouches[0].clientY-sy;
+  sy=null;
+  if(Math.abs(dy)<48||Date.now()-st>900) return;
+  go(cur+(dy<0?1:-1));
+},{passive:true});
+/* 桌面：滚轮 / 方向键 */
+var wt=0;
+addEventListener('wheel',function(e){
+  var n=Date.now(); if(n-wt<450) return; wt=n;
+  if(Math.abs(e.deltaY)<20) return;
+  go(cur+(e.deltaY>0?1:-1));
+},{passive:true});
+addEventListener('keydown',function(e){
+  if(e.key==='ArrowDown'||e.key==='PageDown'||e.key===' ') go(cur+1);
+  if(e.key==='ArrowUp'||e.key==='PageUp') go(cur-1);
+});
+
+/* 背景音乐：右上角按钮区域（图标已在截图里） */
+var bgm=document.getElementById('bgm'), musicOn=false;
+function tryBgm(){
+  if(musicOn) return;
+  if(!bgm.getAttribute('src')) bgm.setAttribute('src','bgm.mp3');
+  bgm.play().then(function(){musicOn=true}).catch(function(){});
+}
+(function(){
+  var d=document.createElement('div'); d.className='hs';
+  d.style.left=(DW-56)+'px'; d.style.top='10px'; d.style.width='48px'; d.style.height='48px';
+  d.addEventListener('click',function(ev){
+    ev.stopPropagation();
+    if(bgm.paused){ bgm.play(); musicOn=true } else { bgm.pause(); musicOn=false }
+  });
+  stage.appendChild(d);
+})();
+go(0);
+/* 后台并行预载其余页面图，翻页零等待 */
+for(var _i=1;_i<N;_i++){var _im=new Image();_im.src='p'+(_i<10?'0'+_i:_i)+'.webp'}
