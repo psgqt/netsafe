@@ -11,9 +11,9 @@
 html,body{width:100%;height:100%;overflow:hidden;background:#0e6ab8;overscroll-behavior:none;touch-action:none}
 #stage{position:absolute;left:50%;top:50%;width:390px;height:844px;
   transform:translate(-50%,-50%) scale(1);transform-origin:center center;overflow:hidden}
-.pg{position:absolute;inset:0;transform:translateY(100%);pointer-events:none;
+.pg{position:absolute;left:0;top:0;right:0;bottom:0;transform:translateY(100%);pointer-events:none;
   transition:transform .45s cubic-bezier(.22,.61,.36,1);will-change:transform}
-.pg img{position:absolute;inset:0;width:100%;height:100%;display:block}
+.pg img{position:absolute;left:0;top:0;width:100%;height:100%;display:block}
 .pg.on{transform:translateY(0);pointer-events:auto}
 .hs{position:absolute;z-index:9;cursor:pointer;border-radius:6px}
 .hs:active{background:rgba(0,0,0,.10)}
@@ -84,7 +84,7 @@ function _go(i){
   imgs[i].style.transform='translateY(0)';
   imgs[i].classList.add('on');
 }
-function killTips(){document.querySelectorAll('.tipwrap').forEach(function(e){e.remove()})}
+function killTips(){var l=document.querySelectorAll('.tipwrap');for(var i=0;i<l.length;i++)l[i].parentNode.removeChild(l[i])}
 function drawTips(){
   var t=TIP[cur]; if(!t) return;
   var w=document.createElement('div'); w.className='tipwrap';
@@ -97,7 +97,7 @@ function drawTips(){
 }
 function redraw(){
   killTips();
-  document.querySelectorAll('.hs[data-hs]').forEach(function(e){e.remove()});
+  var hl=document.querySelectorAll('.hs[data-hs]');for(var i=0;i<hl.length;i++)hl[i].parentNode.removeChild(hl[i]);
   drawTips();
   var hs=HOT[cur]||[];
   hs.forEach(function(h){
